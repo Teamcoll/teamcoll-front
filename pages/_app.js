@@ -1,17 +1,18 @@
 import React from 'react';
 import Head from 'next/head';
-import { DefaultLayout } from '~/components/Layout';
+import { Layout } from '../components/Layout';
 
 export default function Teamcoll({ Component, pageProps }) {
 	return (
 		<>
 			<Head>
 				<title>Teamcoll</title>
+				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="stylesheet" href="reset/normalize.css" />
 			</Head>
-			<DefaultLayout>
+			<Layout>
 				<Component {...pageProps} />
-			</DefaultLayout>
+			</Layout>
 		</>
 	);
 }
