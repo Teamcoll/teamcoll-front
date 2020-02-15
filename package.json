@@ -1,0 +1,42 @@
+{
+	"name": "teamcoll-front",
+	"version": "1.0.0",
+	"description": "Front-end Next.js Repository : Time to make team collaboration!",
+	"main": "index.js",
+	"scripts": {
+		"dev": "next",
+		"build": "next build",
+		"start": "next start"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Teamcoll/teamcoll-front.git"
+	},
+	"keywords": [
+		"Teamcoll",
+		"Next.js",
+		"Spring boot"
+	],
+	"author": "jjam100",
+	"license": "UNLICENSED",
+	"bugs": {
+		"url": "https://github.com/Teamcoll/teamcoll-front/issues"
+	},
+	"homepage": "https://github.com/Teamcoll/teamcoll-front#readme",
+	"dependencies": {
+		"@zeit/next-sass": "^1.0.1",
+		"dotenv": "^8.2.0",
+		"next": "^9.2.1",
+		"node-sass": "^4.13.1",
+		"react": "^16.12.0",
+		"react-dom": "^16.12.0",
+		"styled-components": "^5.0.1"
+	},
+	"devDependencies": {
+		"babel-plugin-styled-components": "^1.10.7",
+		"eslint": "^6.8.0",
+		"eslint-config-prettier": "^6.10.0",
+		"eslint-plugin-prettier": "^3.1.2",
+		"prettier": "^1.19.1"
+	}
+}
