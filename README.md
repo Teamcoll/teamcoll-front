@@ -27,8 +27,8 @@ Next.js 프로젝트 : Teamcoll
 
 ## PACKAGES
 
-All packages maintained or managed by `yarn`.
+All packages maintained or managed by `npm`.
 
 ```bash
-yarn add react react-dom next @zeit/next-sass node-sass styled-components
+npm install --save react react-dom next @zeit/next-sass node-sass styled-components dotenv
 ```
