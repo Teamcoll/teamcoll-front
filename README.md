@@ -20,3 +20,11 @@ Next.js 프로젝트 : Teamcoll
 -   `FIX` : Fix error
 -   `REFACTOR` : Refactor code without modifying logic of feature
 -   `DOC` : Document
+
+## PACKAGES
+
+All packages maintained or managed by `yarn`.
+
+```bash
+yarn add react react-dom next @zeit/next-sass node-sass styled-components
+```
