@@ -32,3 +32,11 @@ All packages maintained or managed by `npm`.
 ```bash
 npm install --save react react-dom next @zeit/next-sass node-sass styled-components dotenv
 ```
+
+```bash
+npm install -D babel-plugin-styled-components eslint eslint-config-prettier eslint-plugin-prettier prettier
+```
+
+## Thanks For
+
+-   [Next.js Setting](https://velog.io/@chdb57/Next.js-%EC%84%B8%ED%8C%85-2xk53qy1je)
