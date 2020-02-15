@@ -1,10 +1,24 @@
 {
-  "plugins": [
-    ["styled-components", {
-      "ssr": true,
-      "displayName": true,
-      "preprocess": false
-    }]
-  ],
-  "presets": ["next/babel"]
+	"plugins": [
+		[
+			"styled-components",
+			{
+				"ssr": true,
+				"displayName": true,
+				"preprocess": false
+			}
+		],
+		[
+			"module-resolver",
+			{
+				"root": ["./"],
+				"alias": {
+					"~": "./",
+					"Image": "./public/images/",
+					"Font": "./public/fonts"
+				}
+			}
+		]
+	],
+	"presets": ["next/babel"]
 }
