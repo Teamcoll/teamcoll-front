@@ -5,7 +5,8 @@ module.exports = withSass({
 	webpack: function(config) {
 		config.resolve.alias['Image'] = path.resolve(__dirname, 'public/images/');
 		config.resolve.alias['Font'] = path.resolve(__dirname, 'public/fonts/');
-		config.resolve.alias['~'] = path.resolve(__dirname, '/src/');
+		config.resolve.alias['Component'] = path.resolve(__dirname, './components');
+		config.resolve.alias['~'] = path.resolve(__dirname, './');
 		config.module.rules.push({
 			test: /\.(eot|woff|woff2|ttf|svg|png|jpg|gif)$/,
 			use: {
