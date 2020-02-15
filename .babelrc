@@ -15,7 +15,8 @@
 				"alias": {
 					"~": "./",
 					"Image": "./public/images/",
-					"Font": "./public/fonts"
+					"Font": "./public/fonts/",
+					"Component": "./components/"
 				}
 			}
 		]
