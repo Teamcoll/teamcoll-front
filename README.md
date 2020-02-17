@@ -20,6 +20,7 @@ Next.js 프로젝트 : Teamcoll
 
 -   `INIT` : initiate feature with starting-setting
 -   `FEAT` : New Feature
+-   `COMP` : New Component
 -   `PACK` : New Package
 -   `FIX` : Fix error
 -   `REFACTOR` : Refactor code without modifying logic of feature
