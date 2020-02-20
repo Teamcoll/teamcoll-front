@@ -37,15 +37,16 @@ const LandingWrapper = styled.div`
 
 const LandingHeader = styled.header`
   width: 60%;
-  height: 100vh;
+  height: calc(100vh - 2 * ${theme.Norm.verticalSpace});
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-content: center;
+  padding: ${theme.ContentsSection.padding};
 
   h2 {
     margin: 0px;
-    font-size: 2em;
+    font-size: 2.5em;
     text-transform: uppercase;
     letter-spacing: -0.05em;
     font-weight: bolder;
@@ -53,13 +54,14 @@ const LandingHeader = styled.header`
 
   p {
     margin: 0px;
+    font-size: 1.5em;
   }
 `;
 
 const LandingArticle = styled.article`
   width: 40%;
   height: calc(100vh - 2 * ${theme.Norm.verticalSpace});
-  overflow-y: scroll;
+  overflow-y: hidden;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
   &::-webkit-scrollbar {
@@ -78,16 +80,22 @@ const Index = () => {
 
       <LandingWrapper theme={theme}>
         <LandingHeader theme={theme}>
-          <h2 id="landing-catch">Show what important thing is.</h2>
-          <p id="landing-introduction">Simpe, but powerful team board.</p>
+          <h2 id="landing-catch">
+            Share with team
+            <br />
+            what important things are.
+          </h2>
+          <p id="landing-introduction">
+            Simpe, but powerful team board. <i>"TEAMCOLL"</i>
+          </p>
         </LandingHeader>
 
         <LandingArticle theme={theme}>
-          <h2>가나다</h2>
-          <p>{loremipsum}</p>
-          <p>{loremipsum}</p>
-          <p>{loremipsum}</p>
-          <p>{loremipsum}</p>
+          <form>
+            <input type="email" />
+            <input type="password" />
+            <button type="submit">Sign-in</button>
+          </form>
         </LandingArticle>
       </LandingWrapper>
     </LandingSection>
