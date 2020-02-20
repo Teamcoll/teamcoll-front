@@ -1,25 +1,26 @@
 {
-	"plugins": [
-		[
-			"styled-components",
-			{
-				"ssr": true,
-				"displayName": true,
-				"preprocess": false
-			}
-		],
-		[
-			"module-resolver",
-			{
-				"root": ["./"],
-				"alias": {
-					"~": "./",
-					"Image": "./public/images/",
-					"Font": "./public/fonts/",
-					"Component": "./components/"
-				}
-			}
-		]
-	],
-	"presets": ["next/babel"]
+  "plugins": [
+    [
+      "styled-components",
+      {
+        "ssr": true,
+        "displayName": true,
+        "preprocess": false
+      }
+    ],
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "~": "./",
+          "Image": "./public/images/",
+          "Font": "./public/fonts/",
+          "Video": "./public/video/",
+          "Component": "./components/"
+        }
+      }
+    ]
+  ],
+  "presets": ["next/babel"]
 }
