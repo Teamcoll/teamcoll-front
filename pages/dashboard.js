@@ -1,5 +1,4 @@
 import { Layout } from "Component/Layout";
-import styled from "styled-components";
 import Ball from "Component/Ball";
 import { TopHeader } from "Component/Header";
 import { Grid } from "Component/Grid";
