@@ -2,6 +2,7 @@ import { Layout } from "Component/Layout";
 import styled from "styled-components";
 import Ball from "Component/Ball";
 import { TopHeader } from "Component/Header";
+import { Grid } from "Component/Grid";
 
 const Card = styled.article`
   background-color: white;
@@ -120,24 +121,6 @@ const ContactCard = styled(Card)`
     width: 50px;
     height: 50px;
     border-radius: 100%;
-  }
-`;
-
-const Grid = styled.div`
-  display: flex;
-  flex-direction: row;
-  section {
-    flex-basis: 33.3%;
-
-    &:first-of-type {
-      margin-left: 0px;
-      margin-right: 50px;
-    }
-
-    &:last-child {
-      margin-left: 50px;
-      margin-right: 0px;
-    }
   }
 `;
 
