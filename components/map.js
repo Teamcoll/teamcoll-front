@@ -13,7 +13,7 @@ export const links = [
   },
   {
     name: "Todo",
-    href: "#"
+    href: "/todo"
   },
   {
     name: "Chat",
