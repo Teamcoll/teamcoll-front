@@ -13,7 +13,8 @@ const Norm = {
 };
 
 const Color = {
-  white: "#ffffff"
+  white: "#ffffff",
+  gray: "#D9D9D6"
 };
 
 export const theme = {
@@ -31,7 +32,8 @@ export const theme = {
   // Navbar
   LeftsideNav: {
     width: Norm.NavigationWidth,
-    shadow: "5px 0px 5px rgb(180, 180, 180)",
+    // shadow: "5px 0px 5px rgb(180, 180, 180)",
+    shadow: "",
     padding: `calc(${Norm.verticalSpace} - ${Norm.LogoSize.height}) ${Norm.horizontalSpace} ${Norm.verticalSpace} ${Norm.horizontalSpace}`,
     list: {
       marginTop: Norm.horizontalSpace,
