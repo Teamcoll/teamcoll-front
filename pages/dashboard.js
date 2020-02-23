@@ -1,24 +1,13 @@
 import { Layout } from "Component/Layout";
 import styled from "styled-components";
 import Ball from "Component/Ball";
+import { TopHeader } from "Component/Header";
 
 const Card = styled.article`
   background-color: white;
   border-radius: 5px;
   padding: 10px 10px;
   border: 1px solid black;
-`;
-
-const TopHeader = styled.header`
-  border-bottom: 1px solid black;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  h2 {
-    margin: 6px 0px;
-    font-size: 2em;
-    margin-left: 10px;
-  }
 `;
 
 const NoticeCard = styled(Card)`
