@@ -11,6 +11,13 @@ const ChatWrapper = styled.ul`
   list-style-type: none;
   margin: 10px 0px;
   padding: 0px;
+  overflow-y: scroll;
+  height: 500px;
+  scroll-behavior: smooth;
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
 `;
 
 const ChatingItem = styled.li`
@@ -70,8 +77,41 @@ const TestMessage = [
   {
     username: "이뭐래",
     text: "뭐래"
+  },
+  {
+    username: "강성현",
+    text: "....."
+  },
+  {
+    username: "이밥줘",
+    text: "배고파."
+  },
+  {
+    username: "김밥",
+    text: "밥 준다."
   }
 ];
+
+const ChatBox = styled.form`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  textarea {
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+    resize: none;
+    border-radius: 5px;
+  }
+
+  button {
+    width: 100px;
+    margin-left: 10px;
+    background-color: white;
+    border: 1px solid black;
+  }
+`;
 
 const Chat = () => {
   return (
@@ -93,6 +133,10 @@ const Chat = () => {
               </ChatingItem>
             ))}
           </ChatWrapper>
+          <ChatBox>
+            <textarea></textarea>
+            <button type="submit">보내기</button>
+          </ChatBox>
         </section>
         <section>
           <h3>Team mate</h3>
